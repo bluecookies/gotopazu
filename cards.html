@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gotopazu Cards</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <div class="content">
+          <div id="filter">
+            <div id="filter-charas">
+              <input checked type="checkbox" value="5">Itsuki</input>
+              <input checked type="checkbox" value="4">Yots</input>
+              <input checked type="checkbox" value="3">Miku</input>
+              <input checked type="checkbox" value="2">Nino</input>
+              <input checked type="checkbox" value="1">Ichika</input>
+            </div>
+            <div id="filter-rarities">
+              <input checked type="checkbox" value="5">5 star</input>
+              <input type="checkbox" value="4">4 star</input>
+              <input type="checkbox" value="3">3 star</input>
+            </div>
+            <button>Filter</button>
+          </div>
+          <table id="cards">
+            <thead>
+              <tr>
+                <th>Card</th>
+                <th>Character</th>
+                <th>Rarity</th>
+                <th>Skill</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="info">Click on a card to see the info.</div>
+    </div>
+    <div class="hoverBox">
+      <div id="hoverSkill">
+        <h4>Skill</h4>
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="hoverBonus">
+        <h4>Bonus Effect</h4>
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="hoverKira">
+        <h4>KiraKira Bonus Effect</h4>
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="hoverDoki">
+        <h4>DokiDoki Bonus Effect</h4>
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/cards.js"></script>
+  </body>
+</html>
